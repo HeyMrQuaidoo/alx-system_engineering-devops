@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -amFC
+ls -amF
