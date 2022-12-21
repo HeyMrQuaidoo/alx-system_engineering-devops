@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# force NginX to run port 80
+sudo fuser -k 80/tcp
+sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
+sudo service nginx start
