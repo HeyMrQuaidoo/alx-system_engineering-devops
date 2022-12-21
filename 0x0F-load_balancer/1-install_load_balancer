@@ -15,7 +15,7 @@ frontend load_balancer
 backend the_servers
         balance roundrobin
         server 65544-web-01 3.84.168.103:80 check
-        server 65544-web-02 3.84.168.103:80 check
+        server 65544-web-02 100.26.250.187:80 check
 "
 sudo echo "$put_this_to_the_file" >> /etc/haproxy/haproxy.cfg
 
