@@ -42,7 +42,7 @@ frontend ericob-http
         default_backend the_servers
 
 frontend load_balancer
-        bind *:443 ssl crt /etc/ssl/ericob.tech/ericob-cert.pem
+        bind *:443 ssl crt /etc/ssl/roomkey.tech/roomkey-cert.pem
         default_backend the_servers
 
 backend the_servers
